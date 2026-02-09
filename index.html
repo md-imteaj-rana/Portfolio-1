@@ -1,191 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MD. Imteaj Rana | Portfolio</title>
-  
-  <!--Tailwind cdn-->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MD. Imteaj Rana | Portfolio</title>
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!--CSS connect-->
+  <link rel="stylesheet" href="styles.css">
+
 </head>
-<body class="font-sans text-gray-800">
 
-  <!-- Navbar -->
-  <nav class="fixed top-0 w-full bg-white shadow z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-      <h1 class="text-xl font-bold">MD. Imteaj Rana</h1>
-      <ul class="hidden md:flex gap-6 font-medium">
-        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
-        <li><a href="#about" class="hover:text-blue-600">About</a></li>
-        <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
-        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
-        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+<body id="body"
+  class="dark bg-linear-to-br from-[#0f172a] via-[#020617] to-black text-gray-200 font-sans transition-colors duration-500">
 
-  <!-- Hero Section -->
-  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center bg-gray-50 pt-24 px-4">
-    <img src="https://i.ibb.co.com/QGd9z5C/imteaj.jpg" alt="Profile" class="object-cover w-40 h-40 rounded-full mb-4 border-4 border-blue-500" />
-    <h2 class="text-3xl md:text-4xl font-bold">MD. Imteaj Rana</h2>
-    <p class="mt-3 text-lg max-w-2xl">
+<!-- Dark / Light Toggle -->
+<button id="themeToggle"
+  class="fixed bottom-6 right-6 z-50 px-4 py-2 rounded-full bg-blue-600 text-white shadow-lg transition">
+  🌙
+</button>
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full backdrop-blur bg-black/40 border-b border-white/10 z-40">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="font-bold text-white">MD. Imteaj Rana</h1>
+    <ul class="hidden md:flex gap-6 text-sm font-medium">
+      <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-400">About</a></li>
+      <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+      <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="min-h-screen flex items-center justify-center pt-28 reveal">
+  <div class="text-center max-w-3xl">
+    <img src="https://i.ibb.co.com/QGd9z5C/imteaj.jpg"
+      class="w-44 h-44 mx-auto rounded-full border-4 border-blue-500 shadow-[0_0_40px_rgba(59,130,246,0.6)] mb-6 object-cover">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-white">MD. Imteaj Rana</h2>
+    <p class="mt-4 text-lg text-gray-400">
       MERN Stack Developer | Backend & Python Enthusiast | Aspiring Software Engineer
     </p>
 
-    <div class="flex gap-4 mt-6 flex-col md:flex-row">
-      <a href="/Resume - Imteaj.pdf" download="Resume - Imteaj.pdf" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Download Resume</a>
-      <a href="https://github.com/md-imteaj-rana" target="_blank" class="border px-4 py-2 rounded">GitHub</a>
-      <a href="https://www.linkedin.com/in/md-imteaj-rana/" target="_blank" class="border px-4 py-2 rounded">LinkedIn</a>
-      <a href="https://www.facebook.com/md.imteaj.rana" target="_blank" class="border px-4 py-2 rounded">FaceBook</a>
+    <div class="flex flex-wrap justify-center gap-4 mt-8">
+      <a href="/Resume - Imteaj.pdf" download
+        class="px-6 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 transition shadow-lg">
+        Download Resume
+      </a>
+      <a href="https://github.com/md-imteaj-rana" target="_blank"
+        class="px-5 py-2 rounded-lg border border-white/20 hover:bg-white/10 transition">
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/md-imteaj-rana/" target="_blank"
+        class="px-5 py-2 rounded-lg border border-white/20 hover:bg-white/10 transition">
+        LinkedIn
+      </a>
+      <a href="https://www.facebook.com/md.imteaj.rana" target="_blank"
+        class="px-5 py-2 rounded-lg border border-white/20 hover:bg-white/10 transition">
+        FaceBook
+      </a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- About Me -->
-  <section id="about" class="max-w-7xl mx-auto py-16 px-6">
-    <h2 class="text-2xl font-bold mb-4">About Me</h2>
-    <p class="leading-relaxed">
-      I am currently pursuing a Bachelor of Science in Computer Science and Engineering at BRAC University. 
-      My passion lies primarily in software engineering and web development, and I strive to strengthen my knowledge in these areas through various methods. 
-      Considering this, I embarked on a specialized learning journey in MERN stack web development parallel to my academic studies and have created multiple full, stack projects that have significantly enhanced my understanding of application design in the real world.
-      <br>
-      I am also passionate about frontend and backend development and during my career,
-       I have gained some practical experience in MongoDB, Express.js, React, and Node.js. 
-       Lately, I have been indulging in the expansion of my skill set on the backend development side with Python programming and competitive programming as my focus areas so that I can elevate my problem, solving skills and system, level thinking.
-        <br>
-      Being a highly motivated and an eager, to, learn kind of person, I am presently seeking an internship or entry, level position where I will be able to make a valuable contribution to the meaningful projects, receive mentorship and grow while building scalable and reliable software.
-    </p>
-  </section>
+<!-- ABOUT -->
+<section id="about" class="max-w-7xl mx-auto py-20 px-6 reveal">
+  <h2 class="text-3xl font-bold text-white mb-6">About Me</h2>
+  <p class="leading-relaxed text-gray-400">
+    I am currently pursuing a Bachelor of Science in Computer Science and Engineering at BRAC University.
+    My passion lies primarily in software engineering and web development, and I strive to strengthen my
+    knowledge in these areas through various methods. Considering this, I embarked on a specialized
+    learning journey in MERN stack web development parallel to my academic studies and have created
+    multiple full, stack projects that have significantly enhanced my understanding of application design
+    in the real world.
+    <br><br>
+    I am also passionate about frontend and backend development and during my career,
+    I have gained some practical experience in MongoDB, Express.js, React, and Node.js.
+    Lately, I have been indulging in the expansion of my skill set on the backend development side with
+    Python programming and competitive programming as my focus areas so that I can elevate my problem,
+    solving skills and system, level thinking.
+    <br><br>
+    Being a highly motivated and an eager, to, learn kind of person, I am presently seeking an internship
+    or entry, level position where I will be able to make a valuable contribution to the meaningful projects,
+    receive mentorship and grow while building scalable and reliable software.
+  </p>
+</section>
 
-  <!-- Skills -->
-  <section id="skills" class="bg-gray-50 py-16">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-2xl font-bold mb-8">Skills</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="p-6 bg-white rounded-xl shadow">
-          <h3 class="font-bold mb-3">Frontend</h3>
-          <p>HTML, CSS, Tailwind CSS, JavaScript, React</p>
-        </div>
-        <div class="p-6 bg-white rounded-xl shadow">
-          <h3 class="font-bold mb-3">Backend</h3>
-          <p>Node.js, Express.js, MongoDB, Python</p>
-        </div>
-        <div class="p-6 bg-white rounded-xl shadow">
-          <h3 class="font-bold mb-3">Tools</h3>
-          <p>Git, GitHub, Firebase</p>
-        </div>
-      </div>
+<!-- SKILLS -->
+<section id="skills" class="bg-white/5 py-20 reveal">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-white mb-10">Skills</h2>
+
+    <!-- Frontend -->
+    <p class="font-semibold">Frontend (HTML, CSS, Tailwind CSS, JavaScript, React)</p>
+    <div class="w-full bg-gray-700 h-2 rounded mb-6">
+      <div class="skill-fill bg-blue-500 h-2 rounded" data-width="90%"></div>
     </div>
-  </section>
 
-  <!-- Projects -->
-  <section id="projects" class="py-16 max-w-7xl mx-auto px-6">
-    <h2 class="text-2xl font-bold mb-8">Projects</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-
-      <!-- Project Card -->
-      <div class="border rounded-xl shadow hover:shadow-lg transition">
-        <img src="https://i.ibb.co.com/Qvnn0MKc/image.png" class="rounded-t-xl" />
-        <div class="p-4 flex flex-col">
-          <h3 class="font-bold">BloodConnect</h3>
-          <p class="text-sm mt-2">A full-stack MERN application.
-            The Blood Donation app that user from all over the country can use to connect with blood donor in any emergencies. 
-            Or a user can also be a donor to contribute in this great social work. 
-            Our purpose is to help the socity and make it beautiful.</p>
-          <a href="https://md-imteaj-rana-bloodconnect-a11.netlify.app/" target="_blank" class="inline-block mt-3 text-blue-600">View Preview</a>
-          <a href="https://github.com/md-imteaj-rana/Practice_Blood_Donation_Application--A11" target="_blank" class="inline-block mt-3 text-blue-400">View GitHub Code</a>
-        </div>
-      </div>
-
-      <div class="border rounded-xl shadow hover:shadow-lg transition">
-        <img src="https://i.ibb.co.com/20fvNbJq/Screenshot-2025-12-31-183151.png" class="rounded-t-xl" />
-        <div class="p-4 flex flex-col">
-          <h3 class="font-bold">PawMart</h3>
-          <p class="text-sm mt-2">A full-stack MERN application.
-            PawMart is an online pet adoption and supply portal where a user can find his/hher suitable animals to make their pet. User can aslo get info about their existing pet's vet. It's a platform where pets are and animals are being served.
-          </p>
-          <a href="https://md-imteaj-rana-pawmart-a10-project.netlify.app/" target="_blank" class="inline-block mt-3 text-blue-600">View Preview</a>
-          <a href="https://github.com/md-imteaj-rana/Practice_PawMart_project--A10" target="_blank" class="inline-block mt-3 text-blue-400">View GitHub Code</a>
-        </div>
-      </div>
-
-      <div class="border rounded-xl shadow hover:shadow-lg transition">
-        <img src="https://i.ibb.co.com/LzqjDstf/Screenshot-2025-12-31-183935.png" class="rounded-t-xl" />
-        <div class="p-4 flex flex-col">
-          <h3 class="font-bold">GameHub</h3>
-          <p class="text-sm mt-2">GameHub is a modern game library from where user can find new and amazing games to download and play on their devices with official sources. Users can easily find their suitable and favourite games from this site and download it from the original sources.
-            </p>
-          <a href="https://md-imteaj-rana-gamehub-a9-project.netlify.app/" target="_blank" class="inline-block mt-3 text-blue-600">View Preview</a>
-          <a href="https://github.com/md-imteaj-rana/Practice_GameHub_project--A9" target="_blank" class="inline-block mt-3 text-blue-400">View GitHub Code</a>
-        </div>
-      </div>
-
-      <div class="border rounded-xl shadow hover:shadow-lg transition">
-        <img src="https://i.ibb.co.com/B5z7hXxR/Screenshot-2026-01-21-125444.png" class="rounded-t-xl" />
-        <div class="p-4 flex flex-col">
-          <h3 class="font-bold">Hero.io</h3>
-          <p class="text-sm mt-2">
-            Hero App store is a advanced application management site for a user. It allows a user to browse through the website and different app stores to install or unistall apps on user's system. 
-            Users can easily find their suitable apps from this site.
-          </p>
-          <a href="https://md-imteaj-rana-hero-app-store-a8.netlify.app/" target="_blank" class="inline-block mt-3 text-blue-600">View Preview</a>
-          <a href="https://github.com/md-imteaj-rana/Practice_Hero_Apps_project--A8" target="_blank" class="inline-block mt-3 text-blue-400">View GitHub Code</a>
-        </div>
-      </div>
-
-      <div class="border rounded-xl shadow hover:shadow-lg transition">
-        <img src="https://i.ibb.co.com/nsMyGTJH/image.png" class="rounded-t-xl" />
-        <div class="p-4 flex flex-col">
-          <h3 class="font-bold">Payoo MFS</h3>
-          <p class="text-sm mt-2">
-            Payoo MFS is a basic JavaScript project. It doesn't have any database or authentication connection currently. 
-            It is build with HTML, CSS, Tailwind and JavaScript(DOM). <br>
-            To test the project use, <br>
-            Phone Number : 123456789, 
-            <br>Pin : 4321
-          </p>
-          <a href="https://md-imteaj-rana.github.io/Practice_Payoo_MFS/" target="_blank" class="inline-block mt-3 text-blue-600">View Preview</a>
-          <a href="https://github.com/md-imteaj-rana/Practice_Payoo_MFS.git" target="_blank" class="inline-block mt-3 text-blue-400">View GitHub Code</a>
-        </div>
-      </div>
-
-      <div class="border rounded-xl shadow hover:shadow-lg transition">
-        <img src="https://i.ibb.co.com/5yhJJ7j/image.png" class="rounded-t-xl" />
-        <div class="p-4 flex flex-col">
-          <h3 class="font-bold">Online Game Center</h3>
-          <p class="text-sm mt-2">
-            We have created an Online Game Center. We have used HTML, Tailwind CSS and JS (DOM)
-            in the frontend, and PHP and MySQL in the backend of our project. Our project is basically a
-            web platform where users visit and can play multiple multiplayer games. Users can
-            participate in tournaments also. Users can book a timeslot in his account to play games and
-            also can earn rewards by scoring as many points as he want.
-            By implementing the ER/EER diagrams and a schema diagram, we ensure optimal retrieval
-            processes. Our project highlights the gaming experience of users who like to play short
-            games to pass some leisure time.
-          </p>
-          <a href="https://github.com/md-imteaj-rana/CSE-370_Database_Systems_project/blob/main/CSE%20370%20-%20Online%20Game%20Center_Demonstration.mp4" target="_blank" class="inline-block mt-3 text-blue-600">View Preview</a>
-          <a href="https://github.com/md-imteaj-rana/CSE-370_Database_Systems_project.git" target="_blank" class="inline-block mt-3 text-blue-400">View GitHub Code</a>
-        </div>
-      </div>
-
+    <!-- Backend -->
+    <p class="font-semibold">Backend (Node.js, Express.js, MongoDB, Python)</p>
+    <div class="w-full bg-gray-700 h-2 rounded mb-6">
+      <div class="skill-fill bg-blue-500 h-2 rounded" data-width="85%"></div>
     </div>
-  </section>
 
-  <!-- Contact -->
-  <section id="contact" class="bg-gray-50 py-16">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-2xl font-bold mb-4">Contact</h2>
-      <p>Email : <a href="mailto:imteaj.rana2@gmail.com" class="text-blue-600">imteaj.rana2@gmail.com</a></p>
-      <p>LinkedIn : <a href="https://www.linkedin.com/in/md-imteaj-rana/" target="_blank" class="text-blue-600">MD. Imteaj Rana</a></p>
-      <p>FaceBook :  <a href="https://www.facebook.com/md.imteaj.rana" target="_blank" class="text-blue-600">MD. Imteaj Rana</a></p>
-      <p>Codeforces :  <a href="https://codeforces.com/profile/md_imteaj_rana" target="_blank" class="text-blue-600">md_imteaj_rana</a></p>
-      <p class="mt-2">Phone or WhatsApp: 01326150646</p>
+    <!-- Tools -->
+    <p class="font-semibold">Tools (Git, GitHub, Firebase)</p>
+    <div class="w-full bg-gray-700 h-2 rounded">
+      <div class="skill-fill bg-blue-500 h-2 rounded" data-width="80%"></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="text-center py-6 border-t">
-    © 2026 MD. Imteaj Rana. All rights reserved.
-  </footer>
+<!-- PROJECTS -->
+<section id="projects" class="py-20 max-w-7xl mx-auto px-6 reveal">
+<h2 class="text-3xl font-bold text-white mb-12">Projects</h2>
 
+<div class="grid md:grid-cols-3 gap-10">
+
+<!-- BloodConnect -->
+<div class="bg-white/10 backdrop-blur border border-white/10 rounded-2xl overflow-hidden hover:-translate-y-2 transition">
+<img src="https://i.ibb.co.com/Qvnn0MKc/image.png">
+<div class="p-6">
+<h3 class="font-bold text-lg">BloodConnect</h3>
+<p class="text-sm mt-2 text-gray-400">
+A full-stack MERN application.
+The Blood Donation app that user from all over the country can use to connect with blood donor in any emergencies.
+Or a user can also be a donor to contribute in this great social work.
+Our purpose is to help the socity and make it beautiful.
+</p>
+<a href="https://md-imteaj-rana-bloodconnect-a11.netlify.app/" target="_blank" class="text-blue-400 mt-3 inline-block">View Preview</a><br>
+<a href="https://github.com/md-imteaj-rana/Practice_Blood_Donation_Application--A11" target="_blank" class="text-blue-300">View GitHub Code</a>
+</div>
+</div>
+
+<!-- PawMart -->
+<div class="bg-white/10 backdrop-blur border border-white/10 rounded-2xl overflow-hidden hover:-translate-y-2 transition">
+<img src="https://i.ibb.co.com/20fvNbJq/Screenshot-2025-12-31-183151.png">
+<div class="p-6">
+<h3 class="font-bold text-lg">PawMart</h3>
+<p class="text-sm mt-2 text-gray-400">
+A full-stack MERN application.
+PawMart is an online pet adoption and supply portal where a user can find his/hher suitable animals to make their pet.
+User can aslo get info about their existing pet's vet.
+</p>
+<a href="https://md-imteaj-rana-pawmart-a10-project.netlify.app/" target="_blank" class="text-blue-400 mt-3 inline-block">View Preview</a><br>
+<a href="https://github.com/md-imteaj-rana/Practice_PawMart_project--A10" target="_blank" class="text-blue-300">View GitHub Code</a>
+</div>
+</div>
+
+<!-- GameHub -->
+<div class="bg-white/10 backdrop-blur border border-white/10 rounded-2xl overflow-hidden hover:-translate-y-2 transition">
+<img src="https://i.ibb.co.com/LzqjDstf/Screenshot-2025-12-31-183935.png">
+<div class="p-6">
+<h3 class="font-bold text-lg">GameHub</h3>
+<p class="text-sm mt-2 text-gray-400">
+GameHub is a modern game library from where user can find new and amazing games to download and play
+on their devices with official sources.
+</p>
+<a href="https://md-imteaj-rana-gamehub-a9-project.netlify.app/" target="_blank" class="text-blue-400 mt-3 inline-block">View Preview</a><br>
+<a href="https://github.com/md-imteaj-rana/Practice_GameHub_project--A9" target="_blank" class="text-blue-300">View GitHub Code</a>
+</div>
+</div>
+
+<!-- Hero.io -->
+<div class="bg-white/10 backdrop-blur border border-white/10 rounded-2xl overflow-hidden hover:-translate-y-2 transition">
+<img src="https://i.ibb.co.com/B5z7hXxR/Screenshot-2026-01-21-125444.png">
+<div class="p-6">
+<h3 class="font-bold text-lg">Hero.io</h3>
+<p class="text-sm mt-2 text-gray-400">
+Hero App store is a advanced application management site for a user.
+It allows a user to browse through the website and different app stores to install or uninstall apps.
+</p>
+<a href="https://md-imteaj-rana-hero-app-store-a8.netlify.app/" target="_blank" class="text-blue-400 mt-3 inline-block">View Preview</a><br>
+<a href="https://github.com/md-imteaj-rana/Practice_Hero_Apps_project--A8" target="_blank" class="text-blue-300">View GitHub Code</a>
+</div>
+</div>
+
+<!-- Payoo -->
+<div class="bg-white/10 backdrop-blur border border-white/10 rounded-2xl overflow-hidden hover:-translate-y-2 transition">
+<img src="https://i.ibb.co.com/nsMyGTJH/image.png">
+<div class="p-6">
+<h3 class="font-bold text-lg">Payoo MFS</h3>
+<p class="text-sm mt-2 text-gray-400">
+Payoo MFS is a basic JavaScript project.
+It is build with HTML, CSS, Tailwind and JavaScript(DOM).
+Phone Number: 123456789 | Pin: 4321
+</p>
+<a href="https://md-imteaj-rana.github.io/Practice_Payoo_MFS/" target="_blank" class="text-blue-400 mt-3 inline-block">View Preview</a><br>
+<a href="https://github.com/md-imteaj-rana/Practice_Payoo_MFS.git" target="_blank" class="text-blue-300">View GitHub Code</a>
+</div>
+</div>
+
+<!-- Online Game Center -->
+<div class="bg-white/10 backdrop-blur border border-white/10 rounded-2xl overflow-hidden hover:-translate-y-2 transition">
+<img src="https://i.ibb.co.com/5yhJJ7j/image.png">
+<div class="p-6">
+<h3 class="font-bold text-lg">Online Game Center</h3>
+<p class="text-sm mt-2 text-gray-400">
+HTML, Tailwind CSS, JS, PHP and MySQL based project where users can play multiplayer games,
+book time slots, participate in tournaments and earn rewards.
+</p>
+<a href="https://github.com/md-imteaj-rana/CSE-370_Database_Systems_project/blob/main/CSE%20370%20-%20Online%20Game%20Center_Demonstration.mp4"
+target="_blank" class="text-blue-400 mt-3 inline-block">View Preview</a><br>
+<a href="https://github.com/md-imteaj-rana/CSE-370_Database_Systems_project.git"
+target="_blank" class="text-blue-300">View GitHub Code</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-black py-20 reveal">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-white mb-6">Contact</h2>
+<p>Email: <a href="mailto:imteaj.rana2@gmail.com" class="text-blue-400">imteaj.rana2@gmail.com</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/md-imteaj-rana/" target="_blank" class="text-blue-400">MD. Imteaj Rana</a></p>
+<p>FaceBook: <a href="https://www.facebook.com/md.imteaj.rana" target="_blank" class="text-blue-400">MD. Imteaj Rana</a></p>
+<p>Codeforces: <a href="https://codeforces.com/profile/md_imteaj_rana" target="_blank" class="text-blue-400">md_imteaj_rana</a></p>
+<p class="mt-2">Phone or WhatsApp: 01326150646</p>
+</div>
+</section>
+
+<footer class="text-center py-6 border-t border-white/10 text-gray-500">
+© 2026 MD. Imteaj Rana. All rights reserved.
+</footer>
+
+  <!--JS script-->
+  <script src="script.js"></script>
 </body>
 </html>

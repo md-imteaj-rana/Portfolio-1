@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+html { scroll-behavior: smooth; }
+
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Skill animation */
+.skill-fill {
+  width: 0;
+  transition: width 1.5s ease;
+}
+
+/* Light theme */
+.light {
+  background: linear-gradient(to bottom right, #f8fafc, #ffffff);
+  color: #1f2937;
+}
+
+.light nav {
+  background: rgba(255,255,255,0.8) !important;
+  border-color: rgba(0,0,0,0.1);
+}
+
+.light section,
+.light footer {
+  background-color: transparent;
+}
+
+.light .bg-white\/10 {
+  background-color: rgba(0,0,0,0.05) !important;
+}
+
+.light .text-gray-400 {
+  color: #4b5563 !important;
+}
+
+.light .text-white {
+  color: #111827 !important;
+}
